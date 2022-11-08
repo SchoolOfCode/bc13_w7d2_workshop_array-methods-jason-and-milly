@@ -17,7 +17,7 @@ function findRogueIndex(number) {
   return number % 77 !== 0
 }
 console.log(seventySevenTimesTable);
-let rogueIndex = seventySevenTimesTable.findIndex(findRogueIndex);
+let rogueIndex = seventySevenTimesTable.findIndex(findRogueIndex); // findIndex must be passed a boolean - that's why passing findIndex(rogueNumber) didn't work!
 console.log(rogueIndex);
 
 
