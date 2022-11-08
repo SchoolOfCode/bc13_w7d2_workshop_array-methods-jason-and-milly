@@ -16,3 +16,24 @@ const students = [
   "Luna Lovegood",
   "Gregory Goyle",
 ];
+
+
+// 6a sort brooms in the broomCupboard
+
+const sortedBroomCupboard = broomCupboard.sort((a,b)=> a-b);
+console.log(sortedBroomCupboard);
+
+// 6b sort the objects by the value of their shelf key
+
+const sortedPotions = potions.sort((a,b)=> a.shelf-b.shelf);
+console.log(sortedPotions);
+
+// 6c sort students by their last name
+const studentArr = students.map(student => {
+  let eachStudent = student.split(' ');
+  return {firstName : eachStudent[0], lastName : eachStudent[1]};
+
+}).sort((a,b) => a.lastName > b.lastName ? 1 : -1 )
+console.log(studentArr);
+
+
